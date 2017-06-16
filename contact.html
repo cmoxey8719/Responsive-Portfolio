@@ -1,75 +1,67 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-us">
+
 <head>
-	<meta charset="UTF-8">
-	<title>About Me</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>Contact | Chris Moxey</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
-<!-- Container with header and nav bar -->
-<div class="topbox">
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Chris Moxey</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-	<!-- header -->
-	<h1>Christopher Moxey</h1>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-	<!--Nav Bar on same level as header -->
-	<div class="nav">
-		<a href="index.html">About Me </a>
-		<a href="portfolio.html">Portfolio </a>
-		<a href="contact.html">Contact</a>
-	</div>
-	
-</div>
-<!-- Div for outer container -->
-<div>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
-<div class="backgroundbox">
+    </section>
 
-	<!-- container for margins of content -->
-	<div class="marginbox">
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
 
-		<!-- form box -->
-		<div class="bigbox">
-			<h2>Contact</h2>
-	
-			<form action="">
-			<div>Name:</div>
-			<input class="textbox" type="text" name="wholename" value="John Smith">
-			<br><br>
-			<div>Email:</div>
-			<input class="textbox" type="email" name="email" value="name@sample.com">
-			<br><br>
-			<div>Message</div>
-			<textarea class="textbox">Leave me a detailed message</textarea>
-			<br><br>
-			<input type="submit" value="Submit">
-			<br>
-			</form>
-		</div>
-		
+        <a href="https:/github.com"><img src="assets/images/github.png" class="social" alt="GitHub" /></a>
+        <a href="https://linkedin.com"><img src="assets/images/linkedin.png" class="social" alt="LinkedIn" /></a>
+        <a href="https://stackoverflow.com"><img src="assets/images/stackoverflow.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
 
-
-		<!-- Connect with me container -->
-		<div class="connect">
-			<h3>Connect with Me</h3>
-		
-			<!-- Image for Github -->
-			<a href="https://github.com"><img class="pic" alt="github" src="assets/images/github.png"></a>
-
-			<!-- Image for Linkedin -->
-			<a href="https://linkedin.com"><img class="pic" alt="linkedin" src="assets/images/linkedin.png"></a>
-
-			<!-- Image for Overstack -->
-		
-			<a href="https://stackoverflow.com/"><img class="pic" alt="stackoverflow" src="assets/images/stackoverflow.png"></a>
-		</div>
-	</div>
-</div>
-
-	<!-- Coppyright at bottom of page -->
-	<div class="foot">Copyright 2017 Christopher Moxey</div>
-
+  <footer>
+    <div class="container">
+      Copyright &copy; 2017 Christopher Moxey
+    </div>
+  </footer>
 </body>
+
 </html>
